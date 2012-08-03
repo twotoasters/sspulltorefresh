@@ -108,6 +108,10 @@ typedef enum {
  */
 @property (nonatomic, assign, readonly) SSPullToRefreshViewState state;
 
+/** Remove the KVOs
+ */
+- (void)removeObservers;
+
 /**
  All you need to do to add this view to your scroll view is call this method (passing in the scroll view). That's it.
  You don't have to add it as subview or anything else. The rest is magic.
